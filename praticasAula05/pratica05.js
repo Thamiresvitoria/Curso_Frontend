@@ -68,4 +68,5 @@ let questao05 = 25 > 20 || 10 > 50;
 
 // exibir a verificação
 
-console.log(questao05);
+console.log(questao05); 
+
