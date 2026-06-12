@@ -24,7 +24,7 @@ console.log(15 < 10 || 15 === 15);
 console.log(!(30 === 40));
 
 // verificar se 8 não é igual a 3 e 12 e menor que 5
-console.log(!(8 > 3) && 12 < 5);
+console.log(!(8 > 3 && 12 < 5));
 
 // verificar se 25 é maior que 20 ou 10 é maior que 50
 console.log(25 > 20 || 10 > 50);
