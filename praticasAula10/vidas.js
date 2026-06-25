@@ -61,3 +61,29 @@ while(estoque > 0){
 
 console.log("Estoque esgotado!");
 console.log("-".repeat(20));
+
+/// --------------------------------------------  Atividade ---------------------------------------------------
+
+// fazendo um contador;
+
+let contador = 0;
+
+while ( contador < 5){
+  console.log("Contador: " + contador);
+  contador++;
+}
+
+console.log("O contador acabou!");
+console.log("-".repeat(20));
+
+// Senha
+
+let senha = 1;
+
+while (senha <= 10){
+  console.log("Chamando senha: " + senha );
+  senha++;
+}
+
+console.log("Todas as senhas foram chamadas! ");
+console.log("-".repeat(20));
