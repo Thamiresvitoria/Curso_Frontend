@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap');
+
+* {
+  margin:0;
+  padding: 0;
+  background-color: #0c0c0c;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Cormorant Garamond', serif;
+  box-sizing: border-box;
+  color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(8, 8, 8, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(139, 0, 0, 0.35);
+}
+
+
+nav {
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 10px 45px;
+    gap: 50px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    flex-shrink: 0;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.04);
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    width: 100%;
+    list-style: none;
+}
+
+
+nav ul li a {
+    position: relative;
+    margin-right: 1rem;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 1px;
+    background-color: #8b0000;
+    transition: width 0.3s ease;
+}
+
+
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+nav ul li:first-child a {
+    color: #b31318;
+}
+
+nav ul li:first-child a::after {
+    width: 100%;
+}
+
+.hero {
+    min-height: 60vh;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0c0c0c;
+
+    span{
+        font-size: 20px;
+        color: #8b0d0d;
+        font-weight: 600;
+    }
+}
+
