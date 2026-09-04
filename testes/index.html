@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal com JavaScript</title>
+
+```
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+```
+
+</head>
+
+<body class="bg-zinc-950 min-h-screen flex items-center justify-center">
+
+```
+<!-- MODAL -->
+<div 
+    class="meu-modal bg-zinc-900 border border-red-500 rounded-xl p-8 w-80 text-white shadow-lg"
+>
+    <h2 class="text-2xl font-bold mb-4">
+        Meu Modal
+    </h2>
+
+    <p class="text-zinc-300 mb-6">
+        Esse é um exemplo de modal controlado pelo JavaScript.
+    </p>
+
+    <button 
+        id="fechar"
+        class="bg-red-600 hover:bg-red-700 px-5 py-2 rounded-lg transition"
+    >
+        Fechar
+    </button>
+</div>
+
+
+<!-- JAVASCRIPT -->
+<script>
+    const modalBox = document.querySelector('.meu-modal');
+    const btnFechar = document.querySelector('#fechar');
+
+    // ADICIONA uma nova classe de estilo
+    modalBox.classList.add('bg-zinc-900', 'border-red-500');
+
+    // REMOVE uma classe de estilo
+    modalBox.classList.remove('hidden'); // Faz o modal aparecer
+
+    // O INTERRUPTOR (toggle):
+    // Se tem a classe, ele tira. Se não tem, ele coloca!
+    btnFechar.addEventListener('click', () => {
+        modalBox.classList.toggle('hidden');
+    });
+</script>
+```
+
+</body>
+</html>
